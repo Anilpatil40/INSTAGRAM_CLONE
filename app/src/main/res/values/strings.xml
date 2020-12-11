@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">INSTAGRAM CLONE</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com</string>
+    <string name="back4app_app_id">nsir0S2YTKjzAsAicZD5Um6giK2P7jgYIY6LVoNu</string>
+    <string name="back4app_client_id">EbrfZYkDOl4MBgsbBdyqypgyrCeJb4XRRdDSqm9K</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
