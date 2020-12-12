@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterActivity extends AppCompatActivity{
     private EditText emailEditText,usernameEditText,passwordEditText;
