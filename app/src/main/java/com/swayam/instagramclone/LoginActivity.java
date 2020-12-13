@@ -48,6 +48,7 @@ public class LoginActivity extends AppCompatActivity{
                 if(e == null){
                     Intent intent = new Intent(LoginActivity.this,UserActivity.class);
                     startActivity(intent);
+                    finish();
                 }else{
                     showMessage(e.getMessage());
                 }
@@ -78,6 +79,7 @@ public class LoginActivity extends AppCompatActivity{
 
     public void createUser(View view){
         startActivity(new Intent(this,RegisterActivity.class));
+        finish();
     }
 
 }

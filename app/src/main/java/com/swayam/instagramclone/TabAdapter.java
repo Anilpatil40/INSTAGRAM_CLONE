@@ -19,11 +19,11 @@ public class TabAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new UserDetailsFragment();
-            case 1:
                 return new PostFragment();
-            case 2:
+            case 1:
                 return new AddPostFragment();
+            case 2:
+                return new UserDetailsFragment();
         }
         return null;
     }
@@ -38,11 +38,11 @@ public class TabAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position){
             case 0:
-                return "User";
-            case 1:
                 return "Posts";
-            case 2:
+            case 1:
                 return "Add Post";
+            case 2:
+                return "User";
         }
         return super.getPageTitle(position);
     }

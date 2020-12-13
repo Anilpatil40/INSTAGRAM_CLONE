@@ -1,79 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
-    android:orientation="vertical"
-    android:paddingEnd="20dp"
-    android:paddingStart="20dp"
-    android:paddingTop="10dp"
+    android:background="@mipmap/instagram_background"
     tools:context=".RegisterActivity">
 
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="USERNAME"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
+        android:layout_height="match_parent"
+        android:padding="25dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-    <EditText
-        android:id="@+id/usernameEditText"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/instagram"/>
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="15dp"
+            android:ems="10"
+            android:background="#33FFFFFF"
+            android:hint="username"
+            android:textColor="@android:color/white"
+            android:textColorHint="#A1FFFFFF"
+            android:inputType="textPersonName"/>
+
+
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="15dp"
+            android:ems="10"
+            android:background="#33FFFFFF"
+            android:hint="password"
+            android:textColor="@android:color/white"
+            android:textColorHint="#A1FFFFFF"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="15dp"
+            android:ems="10"
+            android:background="#33FFFFFF"
+            android:hint="email"
+            android:textColor="@android:color/white"
+            android:textColorHint="#A1FFFFFF"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="1dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textSize="25sp"
+            android:onClick="registerEmail"
+            android:text="SIGN UP" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/or"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="OR"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="5dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintStart_toEndOf="@id/or"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Sign Up using Facebook"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="#3BF669D4">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="PASSWORD"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account ?  "
+                android:textColor="@android:color/white"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="EMAIL"
-        android:textColor="@android:color/black"
-        android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In."
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:onClick="openLogin"/>
 
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        </LinearLayout>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:background="#F44336"
-        android:onClick="registerEmail"
-        android:text="SIGN UP"
-        android:textSize="25sp"
-        app:cornerRadius="10dp"
-        app:strokeWidth="3dp" />
+    </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/holo_blue_dark"
-        android:onClick="openLogin"
-        android:text="LOG IN"
-        android:textSize="25sp"
-        app:cornerRadius="10dp"
-        app:strokeWidth="3dp" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
