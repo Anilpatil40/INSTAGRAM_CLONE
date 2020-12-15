@@ -10,4 +10,4 @@ features :
 
 Downloads :
 
-[INSTAGRAM_CLONE.zip](https://github.com/Anilpatil40/INSTAGRAM_CLONE/files/5694638/INSTAGRAM_CLONE.zip)
+[INSTAGRAM_CLONE.apk](https://ff1rsplje6f0zamv3oeygg-on.drv.tw/GitHub/Anilpatil40/INSTAGRAM_CLONE.apk)
