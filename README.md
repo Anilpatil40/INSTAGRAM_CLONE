@@ -12,6 +12,7 @@ The app is like Instagram to show post and upload post.
 * FitButton
 * ButterKnife
 * Fancy Toast
+* ParseServer
 
 ## DATABASE USED
 * Parse4App
