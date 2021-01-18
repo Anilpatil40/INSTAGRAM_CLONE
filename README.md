@@ -3,9 +3,10 @@
 The app is like Instagram to show post and upload post.
 
 ## FEATURES
-1. seeing posts
-2. uploading posts
-3. posts supposrts images
+* seeing posts
+* uploading posts
+* posts supposrts images
+* updating user information
 
 ## THIRD PARTY LIBRARY USED
 * FitButton
