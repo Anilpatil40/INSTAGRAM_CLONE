@@ -1,6 +1,10 @@
 # INSTAGRAM_CLONE
 
+## ABOUT
 The app is like Instagram to show post and upload post.
+
+## SCREENSHOT
+![Instagram_clone](https://user-images.githubusercontent.com/44651301/104913693-ffc43980-59b3-11eb-8aa2-42127feb9556.gif)
 
 ## FEATURES
 * seeing posts
